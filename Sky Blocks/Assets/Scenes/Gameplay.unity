@@ -353,6 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   block: {fileID: 7522746109847648774, guid: a249d3430efc00a4bb8fc5beed4b9010, type: 3}
   tower: {fileID: 1874928630}
+  crane: {fileID: 1874928630}
   spawn: {fileID: 83750296}
   spawnCooldown: 0.845
   blockAnchor: {fileID: 1630982447}
@@ -834,6 +835,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block
       objectReference: {fileID: 0}
+    - target: {fileID: 7522746109847648774, guid: a249d3430efc00a4bb8fc5beed4b9010,
+        type: 3}
+      propertyPath: m_TagString
+      value: ActualBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8790285993758454862, guid: a249d3430efc00a4bb8fc5beed4b9010,
         type: 3}
       propertyPath: anchorObject
@@ -841,6 +847,36 @@ PrefabInstance:
       objectReference: {fileID: 1630982447}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a249d3430efc00a4bb8fc5beed4b9010, type: 3}
+--- !u!1 &1556097673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556097674}
+  m_Layer: 0
+  m_Name: Block Tower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1556097674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556097673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1630982447
 GameObject:
   m_ObjectHideFlags: 0

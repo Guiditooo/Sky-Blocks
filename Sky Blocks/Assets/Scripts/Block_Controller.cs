@@ -21,10 +21,12 @@ public class Block_Controller : MonoBehaviour
     public void DropBlock()
     {
         Destroy(joint);
+        tag = "Block";
     }
     private void OnCollisionStay(Collision collision)
     {
         //StartCoroutine(MovementCheck(collision.gameObject));
+        /*
         if (!collision.gameObject.CompareTag("Limits"))
         {
             if (transform.eulerAngles.x % 90 >= 0 && transform.eulerAngles.x % 90 <= 1)
@@ -40,6 +42,19 @@ public class Block_Controller : MonoBehaviour
                 }
             }
 
+        }
+        */
+        if (!gameObject.CompareTag("ActualBlock"))
+        {
+            if (!collision.gameObject.CompareTag("Limits"))
+            {
+
+                if (Vector3.Angle(collision.transform.up, transform.up) % 90 >= 0 && transform.eulerAngles.z % 90 <= 1)
+                {
+                    Destroy(rb);
+                }
+
+            }
         }
     }
     /*
